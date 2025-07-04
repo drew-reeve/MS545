@@ -1,0 +1,181 @@
+/* General Body Styles */
+body {
+    background-color: #0a192f; /* Dark Navy Blue */
+    color: #FFFFFF; /* Stark White */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #0d2447;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #4169E1; /* Royal Blue */
+}
+
+.logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(65, 105, 225, 0.5);
+}
+
+.logo-image {
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    border: 3px solid #7bb8ff1;
+}
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4169E1; /* Royal Blue */
+}
+
+/* Main Content and Blog Post */
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-post {
+    background-color: #0d2447;
+    border-radius: 15px;
+    padding: 2rem 3rem;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.blog-post h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7bb8ff; 
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem
+}
+
+.post-meta {
+    text-align: center;
+    color: #a8b2d1;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.post-image {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    border: 3px solid #7bb8ff1;
+}
+
+.post-content h2 {
+    color: #7bb8ff;
+    font-family: 'Fredoka One', cursive;
+    border-bottom: 2px dotted #4169E1;
+    padding-bottom: 5px;
+    margin-top: 2rem;
+}
+
+.post-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    border-left: 5px solid #4169E1;
+    margin: 1.5rem 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #0a192f;
+    border-radius: 5px;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Like Button */
+.post-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.like-button {
+    background-color: #4169E1; /* Royal Blue */
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.like-button:hover {
+    background-color: #5a82f5;
+    transform: scale(1.05);
+}
+
+.like-button .icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.like-button.liked .icon {
+    transform: scale(1.3);
+    animation: pop 0.3s ease-out;
+}
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1.3); }
+}
+
+.like-count {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.white-section {
+    background-color: white; /* or #fff */
+    padding: 20px; /* Example: Add some padding */
+    margin: 10px; /* Example: Add some margin */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    color: #a8b2d1;
+    border-top: 1px solid #1e3a6e;
+}
